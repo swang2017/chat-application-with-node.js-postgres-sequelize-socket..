@@ -1,0 +1,153 @@
+<!-- register page for my chat app -->
+
+<!doctype html>
+
+<html>
+
+<!-- <style>
+	body{
+		padding: 0;
+	}
+	#registerScreen{
+		display: block;
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		margin-top: 10%;
+		border: 1px solid #000;
+		border-radius: 15px;
+		text-align: center;
+		box-shadow: 8px 6px 6px #cccddd;
+	}
+	#top, #bottom{
+		font-family: 'Indie Flower', cursive;
+	}
+	#bottom{
+		margin-top: 20%;
+		width: 100%;
+		text-align: center;
+	}
+	#user, #pass{
+		font-family: 'Poppins', sans-serif;
+		font-size: 18px;
+		display: block;
+		margin-top: 5%;
+	}
+	#myname{
+		font-family: 'Poppins', sans-serif;
+		font-size: 12px;
+	}
+	#enter{
+		margin-top: 5%;
+		font-size: 28px;
+		font-family: 'Poppins', sans-serif;
+	}
+	button{
+		margin-top: 25px;
+		padding: 4px 5px 4px 5px;
+		border-radius: 6px;
+		border: 1px solid #000;
+	}
+	a{
+		text-decoration: none;
+		color: #eaaabe;
+	}
+	.alert{
+		color: #b91919;
+	}
+
+	/* for mobile devices */
+	@media screen and (max-width: 800px){
+		html, body{
+			padding: 0;
+			margin: 0;
+		}
+		#top{
+			padding: 5px;
+		}
+		#registerScreen{
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			box-shadow: 0px 0px 0px #fff;
+			border: none;
+		}
+		#bottom{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+
+</style> -->
+
+<head>
+	<!-- <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<title> register </title> -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title> Second Project Chat App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <style>
+    body {
+      margin-top:30px;
+      }
+      .container {
+        /*background-color: red;*/
+      }
+      /*#messageArea {
+        display:none;
+      }
+      #registerForm {
+        display:none
+      }*/
+      .form-control {
+        height: 30px;
+        width: 320px
+      }
+      /*.form-groupMessage {
+        margin-top: 400px;
+      }*/
+      .chat {
+        border-style: solid;
+        border-color: Gray;
+        border-width: thick;
+        width: 700px;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    </style>
+</head>
+
+<body>
+<div class="container">
+	<form  action='/user' method='post' id="registerForm">
+		<div class="form-group">
+			<label>Enter Username</label>
+			<input class="form-control" id="usernameRegister" maxlength="20" name = "username" required></input>
+			<br />
+			<label>Enter Email Address</label>
+			<input type="email" class="form-control" id="emailRegister" name = "email" required></input>
+			<br />
+			<label>Enter Password</label>
+			<input type="password" class="form-control" id="passwordRegister" maxlength="20" name ="password" required></input>
+			<br />
+			<input id="registerLogin" type="submit" class="btn btn-primary" value="Register" />
+		</div>
+	</form>
+	</div>
+
+</body>
+
+<script>
+
+
+</script>
+
+</html>
