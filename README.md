@@ -19,3 +19,7 @@ Client side:
 
 To make this work locally, a local database need to be setup,  postgres is used this example. 
 Sequelize is used for communication with the database. 
+
+a few things need to be done in the future:
+    1. log all the chat messages into a database
+    2. depoly the application to an online sever
